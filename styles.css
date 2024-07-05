@@ -1,0 +1,352 @@
+body {
+    background: linear-gradient(135deg, #f0f, #0ff, rgb(255, 255, 255), #f0f);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+header {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    background-image: url('banner.png'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover;
+    background-position: center;
+}
+
+header img {
+    width: 80px;
+    height: auto;
+}
+
+header h1 {
+    margin: 10px 0 5px;
+    font-size: 1.8rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+    position: relative;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+    transform: scale(1.1);
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.service, .faq, .plans, .contact, .why-hire {
+    margin-bottom: 40px;
+}
+
+.plans {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.plan {
+    background-color: #fffcfc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(84, 255, 65, 0.1);
+    flex: 1;
+    text-align: center;
+}
+
+.plan h3 {
+    color: #007BFF;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.plan p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.plan ul {
+    margin-bottom: 15px;
+    text-align: left;
+    list-style: none;
+    padding: 0;
+}
+
+.plan li {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.plan button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.plan button:hover {
+    background-color: #0056b3;
+}
+
+.faq div {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.faq h3 {
+    color: #007BFF;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.faq p {
+    font-size: 1.2rem;
+    color: #333; /* Cor do texto ajustada para contraste */
+}
+
+.contact {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.contact h2 {
+    color: #000;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 1.2rem;
+    color: #333; /* Cor do texto ajustada para contraste */
+}
+
+.contact a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ac9e61;
+    border-radius: 5px;
+}
+
+.contact a:hover {
+    background-color: #0056b3;
+}
+
+.contact img.instagram-logo {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+.service ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.service li {
+    margin-bottom: 10px;
+}
+
+.why-hire ul {
+    list-style-type: circle;
+    margin-left: 20px;
+}
+
+.why-hire li {
+    margin-bottom: 10px;
+}
+
+.feedback-form {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.feedback-form h2 {
+    color: #000;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.feedback-form label {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.feedback-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    min-height: 150px;
+    margin-bottom: 10px;
+}
+
+.feedback-form button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.feedback-form button:hover {
+    background-color: #0056b3;
+}
+
+.cta-button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.cta-button:hover {
+    background-color: #45a049;
+}
+
+.lead-form {
+    margin-top: 20px;
+}
+
+.lead-form label {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.lead-form input[type="email"] {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.lead-form button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.lead-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #1a1a2e; /* Fundo escuro */
+    color: #fff; /* Texto branco */
+    padding: 30px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.company-info {
+    max-width: 600px; /* Ajuste conforme necessário */
+    margin: auto;
+    padding: 15px;
+    border-top: 2px solid #4CAF50; /* Linha superior neon */
+}
+
+.company-info h2 {
+    font-size: 1.5rem; /* Tamanho do título reduzido */
+    margin-bottom: 15px; /* Espaçamento inferior reduzido */
+    color: #4CAF50; /* Verde neon */
+}
+
+.company-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.company-info ul li {
+    font-size: 1rem; /* Tamanho do texto reduzido */
+    margin-bottom: 8px; /* Espaçamento inferior reduzido */
+    color: #a8b2d1; /* Cinza claro para informações */
+}
+
+/* Efeito hover sutil */
+.company-info ul li:hover {
+    color: #fff; /* Mudança de cor ao passar o mouse */
+    transition: color 0.3s ease;
+}
+
+/* Efeito neon para o rodapé */
+footer::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(45deg, #007BFF, #4CAF50, #ffcc00);
+    z-index: -1;
+    opacity: 0.5;
+}
