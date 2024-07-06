@@ -33,6 +33,12 @@ body {
     }
 }
 
+body {
+    background: linear-gradient(135deg, #f0f, #0ff, rgb(255, 255, 255), #f0f);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
 @keyframes gradient {
     0% {
         background-position: 0% 50%;
@@ -45,12 +51,13 @@ body {
     }
 }
 
+
 header {
     background-color: #007BFF;
     color: #fff;
     padding: 10px 0;
     text-align: center;
-    background-image: url('banner.png'); 
+    background-image: url('banner.png'); /* Substitua pelo caminho da sua imagem */
     background-size: cover;
     background-position: center;
 }
@@ -377,4 +384,44 @@ footer::before {
     background: linear-gradient(45deg, #007BFF, #4CAF50, #ffcc00);
     z-index: -1;
     opacity: 0.5;
+}
+.client-feedbacks {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.client-feedbacks h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.feedback-images ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.feedback-images li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.feedback-images img {
+    max-width: 150px;
+    border-radius: 50%;
+    border: 3px solid #ddd;
+    margin: 10px;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.feedback-images img:hover {
+    transform: scale(1.1);
+    border-color: #007bff;
 }
