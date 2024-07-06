@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teste de avaliação para Visto Americano</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+  
+  <div class="container">
+    <img src="Assessoria.png" alt="Logo da Assessoria Planeta Vistos" width="60" height="auto"> 
+    
+    <h2>Teste de aprovação do Visto Americano</h2>
+
+    <form id="formulario">
+      <div class="pergunta">
+        <p>1. Qual é o motivo principal da sua viagem aos Estados Unidos?</p>
+        <div class="resposta">
+          <label>
+            <input type="radio" name="pergunta1" value="turismo" required> Turismo
+          </label><br>
+          <label>
+            <input type="radio" name="pergunta1" value="estudo" required> Estudo
+          </label><br>
+          <label>
+            <input type="radio" name="pergunta1" value="trabalho" required> Trabalho
+          </label><br>
+          <label>
+            <input type="radio" name="pergunta1" value="visita" required> Visita a familiares/amigos
+          </label>
+        </div>
+      </div>
+
+      <div class="pergunta">
+        <p>2. Qual é o seu status atual?</p>
+        <div class="resposta">
+          <label>
+            <input type="radio" name="pergunta2" value="estudante" required> Estudante
+          </label><br>
+          <label>
+            <input type="radio" name="pergunta2" value="carteira-menos-3" required> Carteira assinada menos de 3 anos
+          </label><br>
+          <label>
+            <input type="radio" name="pergunta2" value="carteira-mais-3" required> Carteira assinada mais de 3 anos
+          </label><br>
+          <label>
+            <input type="radio" name="pergunta2" value="empresario-menos-3" required> Empresário menos de 3 anos
+          </label><br>
+          <label>
+            <input type="radio" name="pergunta2" value="empresario-mais-3" required> Empresário mais de 3 anos
+          </label>
+        </div>
+      </div>
+
+      <div class="pergunta">
+        <p>3. Você já visitou os Estados Unidos anteriormente?</p>
+        <div class="resposta">
+          <label>
+            <input type="radio" name="pergunta3" value="sim" required> Sim
+          </label><br>
+          <label>
+            <input type="radio" name="pergunta3" value="nao" required> Não
+          </label>
+        </div>
+      </div>
+
+      <div class="pergunta">
+        <p>4. Você possui algum familiar próximo que vive nos Estados Unidos?</p>
+        <div class="resposta">
+          <label>
+            <input type="radio" name="pergunta4" value="sim" required> Sim
+          </label><br>
+          <label>
+            <input type="radio" name="pergunta4" value="nao" required> Não
+          </label>
+        </div>
+      </div>
+
+      <div class="pergunta">
+        <p>5. Quanto tempo pretende ficar nos Estados Unidos?</p>
+        <div class="resposta">
+          <label>
+            <input type="radio" name="pergunta5" value="menos-1-mes" required> Menos de 1 mês
+          </label><br>
+          <label>
+            <input type="radio" name="pergunta5" value="1-3-meses" required> Entre 1 e 3 meses
+          </label><br>
+          <label>
+            <input type="radio" name="pergunta5" value="mais-3-meses" required> Mais de 3 meses
+          </label>
+        </div>
+      </div>
+
+      <div class="pergunta">
+        <p>6. Qual tipo de visto você está solicitando?</p>
+        <div class="resposta">
+          <label>
+            <input type="radio" name="pergunta6" value="b1" required> Visto B1 (Negócios)
+          </label><br>
+          <label>
+            <input type="radio" name="pergunta6" value="b2" required> Visto B2 (Turismo)
+          </label><br>
+          <label>
+            <input type="radio" name="pergunta6" value="f1" required> Visto F1 (Estudante)
+          </label><br>
+          <label>
+            <input type="radio" name="pergunta6" value="j1" required> Visto J1 (Intercâmbio)
+          </label><br>
+          <label>
+            <input type="radio" name="pergunta6" value="outro" required> Outro
+          </label>
+        </div>
+      </div>
+
+      <div class="pergunta">
+        <p>7. Qual é o seu nível de inglês?</p>
+        <div class="resposta">
+          <label>
+            <input type="radio" name="pergunta7" value="basico" required> Básico
+          </label><br>
+          <label>
+            <input type="radio" name="pergunta7" value="intermediario" required> Intermediário
+          </label><br>
+          <label>
+            <input type="radio" name="pergunta7" value="avancado" required> Avançado
+          </label><br>
+          <label>
+            <input type="radio" name="pergunta7" value="fluente" required> Fluente
+          </label>
+        </div>
+      </div>
+
+      <div class="pergunta">
+        <p>8. Você já possui reservas de acomodação nos Estados Unidos?</p>
+        <div class="resposta">
+          <label>
+            <input type="radio" name="pergunta8" value="sim" required> Sim
+          </label><br>
+          <label>
+            <input type="radio" name="pergunta8" value="nao" required> Não
+          </label>
+        </div>
+      </div>
+
+      <div class="pergunta">
+        <p>9. Você já possui passagem comprada para os Estados Unidos?</p>
+        <div class="resposta">
+          <label>
+            <input type="radio" name="pergunta9" value="sim" required> Sim
+          </label><br>
+          <label>
+            <input type="radio" name="pergunta9" value="nao" required> Não
+          </label>
+        </div>
+      </div>
+
+      <button type="submit">Enviar Respostas</button>
+    </form>
+
+    <div class="resultado" id="resultado" aria-live="polite">
+      <!-- Aqui será exibido o resultado após a submissão do formulário -->
+    </div>
+<li>Todos os direitos reservados. Este site pertence à Ameri Vistos, CNPJ: 55.429.869/0001-48.</li>
+  </div>
+
+  <script src="script1.js"></script>
+</body>
+</html>
