@@ -113,10 +113,12 @@ nav ul li a:hover {
 }
 
 .plan h3 {
-    color: #007BFF;
+    color: #0056b3;
     font-size: 1.5rem;
     margin-bottom: 10px;
 }
+
+
 
 .plan p {
     font-size: 1.2rem;
