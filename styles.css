@@ -103,23 +103,110 @@ nav ul li a:hover {
     gap: 20px;
 }
 
+.plans {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
 .plan {
     background-color: #fffcfc;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(84, 255, 65, 0.1);
     flex: 1;
     text-align: center;
+    position: relative; /* Para garantir que o conteúdo fique acima do fundo */
+    color: #ffffff; /* Cor da fonte */
 }
 
+.plan {
+    background-image: url('plan.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1;
+    text-align: center;
+    position: relative;
+    color: #fffbfb; /* Cor do texto */
+}
+
+
+.plan.completo {
+    background-image: url('plan.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1;
+    text-align: center;
+    position: relative;
+    color: #ffffff; /* Cor do texto */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Sombra do texto mais clara */
+}
+
+.plan.premium {
+    background-image: url('plan.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1;
+    text-align: center;
+    position: relative;
+    color: #ffffff; /* Cor do texto */
+    font-weight: bold; /* Ajuste opcional para enfatizar o texto */
+}
+
+.plan.premium::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(255, 215, 0, 0.8), rgba(255, 215, 0, 0.5)); /* Gradient dourado para o efeito neon */
+    border-radius: 8px;
+    z-index: -1;
+}
+
+
+
+
+
 .plan h3 {
-    color: #0056b3;
+    color: #FFD700; /* Dourado claro para o título */
     font-size: 1.5rem;
     margin-bottom: 10px;
 }
 
+.plan p,
+.plan ul,
+.plan li {
+    color: #000000; /* Cinza escuro para o texto */
+    text-shadow: #ccc;
+}
+
+.plan button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.plan button:hover {
+    background-color: #0056b3;
+}
 
 
+/* Estilos para botões, textos e outros elementos do plano */
 .plan p {
     font-size: 1.2rem;
     margin-bottom: 15px;
@@ -147,6 +234,74 @@ nav ul li a:hover {
     border-radius: 5px;
     margin-top: 10px;
 }
+
+.plan button:hover {
+    background-color: #0056b3;
+}
+
+
+.plan h3 {
+    color: #0056b3;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+
+
+.plan p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.plan ul {
+    margin-bottom: 15px;
+    text-align: left;
+    list-style: none;
+    padding: 0;
+}
+
+.plan li {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.plan button {
+    background-color: #ffffff;
+    text-shadow: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Exemplo de classe reutilizável para botões */
+.button {
+    display: inline-block;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Classe para animação de gradiente */
+.gradient-background {
+    animation: gradient 15s ease infinite;
+    background: linear-gradient(45deg, rgba(0, 123, 255, 0.2), rgba(76, 175, 80, 0.2), rgba(255, 204, 0, 0.2));
+    background-size: 200% 200%;
+}
+
+
 
 .plan button:hover {
     background-color: #0056b3;
