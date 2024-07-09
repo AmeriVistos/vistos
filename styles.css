@@ -130,7 +130,8 @@ nav ul li a:hover {
     flex: 1;
     text-align: center;
     position: relative;
-    color: #fffbfb; /* Cor do texto */
+    color: #000000; /* Cor do texto */
+    text-shadow: 1px 1px 3px rgb(255, 255, 255); /* Sombra do texto mais clara */
 }
 
 
