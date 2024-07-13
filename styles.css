@@ -371,43 +371,53 @@ nav ul li a:hover {
 }
 
 /* Estilos para o rodapé */
-footer {
-    background-color: #1a1a2e; /* Fundo escuro */
-    color: #fff; /* Texto branco */
-    padding: 30px 0;
-    text-align: center;
-    margin-top: 40px;
+
+
+/* Estilos para a animação */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Estilos para a seção de informações da empresa */
 .company-info {
-    max-width: 600px; /* Ajuste conforme necessário */
-    margin: auto;
-    padding: 15px;
-    border-top: 2px solid #4CAF50; /* Linha superior neon */
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
 }
 
 .company-info h2 {
-    font-size: 1.5rem; /* Tamanho do título reduzido */
-    margin-bottom: 15px; /* Espaçamento inferior reduzido */
-    color: #4CAF50; /* Verde neon */
+    margin-bottom: 15px;
+    color: #343a40;
 }
 
 .company-info ul {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
 }
 
-.company-info ul li {
-    font-size: 1rem; /* Tamanho do texto reduzido */
-    margin-bottom: 8px; /* Espaçamento inferior reduzido */
-    color: #a8b2d1; /* Cinza claro para informações */
+.company-info li {
+    margin-bottom: 10px;
+    color: #6c757d;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
 }
 
-/* Efeito hover sutil */
-.company-info ul li:hover {
-    color: #fff; /* Mudança de cor ao passar o mouse */
-    transition: color 0.3s ease;
+.company-info li i {
+    margin-right: 10px;
+    color: #007bff;
 }
+
+
 
 /* Efeito neon para o rodapé */
 footer::before {
